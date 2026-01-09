@@ -28,6 +28,34 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <footer className="bg-green-700 text-white py-6 mt-16">
+  <div className="text-center">
+    <h3 className="font-semibold text-lg mb-2">Mana Rythu Sampada</h3>
+
+    <div className="flex justify-center gap-6 mt-4">
+      <a
+        href="https://www.instagram.com/mana.rythu.sampada"
+        target="_blank"
+        className="underline"
+      >
+        Instagram
+      </a>
+
+      <a
+        href="https://www.youtube.com/@ManaRythuSampada"
+        target="_blank"
+        className="underline"
+      >
+        YouTube
+      </a>
+    </div>
+
+    <p className="mt-4 text-sm">
+      © {new Date().getFullYear()} Mana Rythu Sampada. All rights reserved.
+    </p>
+  </div>
+</footer>
+
       </body>
     </html>
   );
