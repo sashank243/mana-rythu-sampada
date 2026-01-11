@@ -15,29 +15,41 @@ export default function RootLayout({
       <body className="bg-white text-gray-800">
 
         {/* ===== HEADER ===== */}
-        <header className="w-full bg-white sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div className="flex items-center px-6 py-4">
 
-            {/* BRAND */}
-            <div>
-              <h1 className="text-3xl font-bold text-green-700">
-                Mana Rythu Sampada
-              </h1>
-              <p className="text-sm text-gray-600">
-                మన రైతు సంపద
-              </p>
-            </div>
+    {/* LOGO */}
+    <img
+      src="/assets/logo.png"
+      alt="Mana Rythu Sampada Logo"
+      className="h-12 w-auto"
+    />
 
-            {/* NAVIGATION (GRAY TEXT) */}
-            <nav className="flex gap-8 text-base font-medium text-gray-700">
-              <a href="/" className="hover:text-gray-500">Home</a>
-              <a href="/#products" className="hover:text-gray-500">Products</a>
-              <a href="/about" className="hover:text-gray-500">About</a>
-              <a href="/contact" className="hover:text-gray-500">Contact</a>
-            </nav>
+    {/* SMALL GAP + BRAND NAME */}
+    <div className="ml-10">
+      <h1 className="text-2xl font-bold text-green-700 leading-tight">
+        Mana Rythu Sampada
+      </h1>
+      <p className="text-sm text-gray-600">
+        మన రైతు సంపద
+      </p>
+    </div>
 
-          </div>
-        </header>
+    {/* MENU WITH GAP FROM BRAND */}
+    <nav className="ml-180 flex gap-8 text-base font-medium text-gray-700">
+      <a href="/" className="hover:text-green-600">Home</a>
+      <a href="/#products" className="hover:text-green-600">Products</a>
+      <a href="/about" className="hover:text-green-600">About</a>
+      <a href="/contact" className="hover:text-green-600">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+
+
+
 
         {/* ===== PAGE CONTENT ===== */}
         <main>
